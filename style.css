@@ -39,10 +39,10 @@ html {
 
 .container {
   width: 600px;
-  height: 600px;
+  min-height: 600px;
   background-color: #f2eecb;
   border-radius: 4px;
-
+  margin-top: 70px;
   padding: 32px;
 }
 
@@ -78,6 +78,10 @@ html {
   outline: unset;
 }
 
+.header-btn:hover {
+  color: #4d2a24;
+}
+
 .add {
   padding: 16px;
 }
@@ -111,4 +115,28 @@ html {
   background: unset;
   border: none;
   outline: none;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+}
+
+.tod {
+  position: relative;
+
+  flex: 1 0 auto;
+  text-align: center;
+
+  min-height: 34px;
+  margin: 16px 0 0;
+  font-family: "Homemade apple", "sans-serif";
+  font-size: 24px;
+  border-bottom: 1px solid red;
+}
+
+.tod-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
